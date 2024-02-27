@@ -1,0 +1,39 @@
+\chapter{Results}
+\label{cp:results}
+
+\section{Coefficient of Pressure Distribution} \label{sec c_p_distribution}
+
+\autoref{fig:c_p_distribution} shows the coefficient of pressure, \gls{C_P}, around the cylinder at motor frequencies of \qtyrange{5}{35}{\hertz}. The \gls{C_P} for each motor frequency was calculated at \qty{20}{\degree} increments around the cylinder using \autoref{eq:pressurecoeff_2} from data measured with the Scanivalve DSA 3217 and collected using the data acquisition software (see \autoref{sec:procedures}). The theoretical solution was calculated using the equation:
+
+\begin{equation}\label{eq:theoretical_sol}
+    C_P = 1 - 4\sin^2{\theta}
+\end{equation}
+
+To demonstrate the uniformity of the flow at higher velocities, \autoref{fig:c_p_distribution_exc} excludes the pressure distribution curves for the \qtyrange{5}{15}{\hertz} motor frequencies.
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.93\linewidth]{Figures/C_p Distribution of a Cylinder.svg}
+    \caption[Plot of the coefficient of pressure distribution around a cylinder]{Plot of the \gls{C_P} distribution at different angles around the cylinder with the theoretical solution}
+    \label{fig:c_p_distribution}
+\end{figure}
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.93\linewidth]{Figures/C_p Distribution of a Cylinder (Excluding 5–15 Hz).svg}
+    \caption[Plot of the coefficient of pressure distribution around a cylinder]{Plot of the \gls{C_P} distribution at different angles around the cylinder with the theoretical solution, excluding 5-15 Hz motor speeds}
+    \label{fig:c_p_distribution_exc}
+\end{figure}
+
+\newpage
+
+\section{Coefficient of Drag} \label{sec c_d}
+
+\autoref{fig:c_d_cylinder_re} shows the relationship between \gls{C_d} and the Reynolds number. \autoref{eq:Re} is used to calculate Reynolds number at the different fluid velocities.
+
+\begin{figure}[htpb]
+    \centering
+    \includesvg[width=0.93\linewidth]{Figures/C_d vs. Reynolds Number for a Cylinder.svg}
+    \caption[Plot of coefficient of drag vs. Reynolds number]{Plot of the coefficient of drag vs. Reynolds number.}
+    \label{fig:c_d_cylinder_re}
+\end{figure}
